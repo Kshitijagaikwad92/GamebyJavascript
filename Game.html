@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Game Space</title>
+    <link rel="stylesheet" type="text/css" href="Game.css">
+   <script src="Game.js"></script>
+</head>
+
+<body>
+    <div class="game-container">
+        <div id="selectionArea">
+            <h3>Welcome To Stone-Paper-Scissor Game</h3>
+            <div>
+                <label>Select your choice:</label><br>
+                <input type="radio" name="selectedChoice" value="stoneChoice" style="cursor: pointer;"
+                    id="stoneChoice">Stone
+                &nbsp;
+                <input type="radio" name="selectedChoice" value="paperChoice" style="cursor: pointer;"
+                    id="paperChoice">Paper
+                &nbsp;
+                <input type="radio" name="selectedChoice" value="scissorChoice" style="cursor: pointer;"
+                    id="scissorChoice">Scissor
+            </div>
+            <div>
+                <button type="button" onclick="checkChoice()">Run Game</button>
+            </div>
+        </div>
+        <div id="gameArea" class="hidden"></div>
+    </div>
+
+</body>
+
+</html>
